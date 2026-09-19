@@ -1,0 +1,60 @@
+{
+  "environment": "Chrome on Linux; 440 CSS px wide; DPR 1; Apple system font unavailable; fallback font and native Linux emoji; JPEG browser captures",
+  "methodology": "sRGB conversion, reference downsample to 440 px width; primary bubble silhouette via blue mask with enclosed holes filled; errors measured in 8-bit RGB without registration or image warping",
+  "notes": [
+    "Full-height reference overlays are available interactively in the demo.",
+    "Saved full-conversation and keyboard comparisons cover the top 936 of 956 logical pixels because of the QA viewport.",
+    "Silhouette IoU is geometry only, not a text-fidelity or overall similarity score.",
+    "Live status-island content and Liquid Glass are not recreated exactly."
+  ],
+  "cases": {
+    "messages": {
+      "compared_dimensions": [
+        440,
+        554
+      ],
+      "primary_bubble_roi": [
+        160,
+        52,
+        435,
+        537
+      ],
+      "primary_sent_bubble_silhouette_iou": 0.9992,
+      "canvas_mean_absolute_rgb_error_0_to_255": 7.889,
+      "foreground_mean_absolute_rgb_error_0_to_255": 15.152,
+      "primary_bubble_mean_absolute_rgb_error_0_to_255": 13.181
+    },
+    "conversation": {
+      "compared_dimensions": [
+        440,
+        936
+      ],
+      "primary_bubble_roi": [
+        160,
+        385,
+        435,
+        872
+      ],
+      "primary_sent_bubble_silhouette_iou": 0.9974,
+      "canvas_mean_absolute_rgb_error_0_to_255": 11.742,
+      "foreground_mean_absolute_rgb_error_0_to_255": 21.947,
+      "primary_bubble_mean_absolute_rgb_error_0_to_255": 12.178
+    },
+    "keyboard": {
+      "compared_dimensions": [
+        440,
+        936
+      ],
+      "primary_bubble_roi": [
+        160,
+        50,
+        435,
+        539
+      ],
+      "primary_sent_bubble_silhouette_iou": 0.92202,
+      "canvas_mean_absolute_rgb_error_0_to_255": 9.25,
+      "foreground_mean_absolute_rgb_error_0_to_255": 13.494,
+      "primary_bubble_mean_absolute_rgb_error_0_to_255": 18.29
+    }
+  }
+}
